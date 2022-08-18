@@ -27,7 +27,7 @@ export default hashConfig({
   | free to change the default value
   |
   */
-  default: Env.get('HASH_DRIVER', 'argon'),
+  default: Env.get('HASH_DRIVER', 'bcrypt'),
 
   list: {
     /*
@@ -43,14 +43,14 @@ export default hashConfig({
     | npm install phc-argon2
     |
     */
-    argon: {
-      driver: 'argon2',
-      variant: 'id',
-      iterations: 3,
-      memory: 4096,
-      parallelism: 1,
-      saltSize: 16,
-    },
+    // argon: {
+    //   driver: 'argon2',
+    //   variant: 'id',
+    //   iterations: 3,
+    //   memory: 4096,
+    //   parallelism: 1,
+    //   saltSize: 16,
+    // },
 
     /*
     |--------------------------------------------------------------------------
